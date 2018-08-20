@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  max-widht: 1200px;
+  padding: 0 25px;
+  margin: 0 auto; }
+
+.header__wrp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header__title {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: end;
+  font: bold 50px "Roboto", sans-serif; }
+
+.logo__img {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+input::-webkit-calendar-picker-indicator {
+  display: none; }
+
+.section-form__wrp {
+  padding-top: 50px; }
+
+.section-form__title {
+  margin: 0;
+  padding: 0;
+  font: 25px "Roboto", sans-serif;
+  text-align: center; }
+
+.section-form__title {
+  margin: 0;
+  padding: 0;
+  font: 25px "Roboto", sans-serif;
+  text-align: center; }
+
+.section-form__form {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 50px; }
+
+.section-form__button {
+  padding: 10px 0;
+  font: 15px "Roboto", sans-serif;
+  border: 1px solid black;
+  max-width: 200px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  margin: 20px auto 0;
+  display: none; }
+  .section-form__button:hover {
+    background-color: lightgrey; }
+
+.section-form__message {
+  margin: 50px auto 0;
+  width: 500px;
+  height: 200px;
+  display: none;
+  border: 1px solid black;
+  font: 20px "Roboto", sans-serif;
+  text-align: center;
+  line-height: 50px; }
+
+.form__field:not(:last-child) {
+  margin-bottom: 25px; }
+
+.form__input {
+  width: 100%;
+  padding: 15px 0  15px 60px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  -webkit-box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
+          box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
+  outline: none; }
+  .form__input_novalid {
+    border-color: red; }
+
+.form__submit {
+  width: 100%;
+  padding: 15px 0;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  -webkit-box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
+          box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
+  outline: none;
+  background-color: transparent;
+  cursor: pointer; }
+  .form__submit:hover {
+    background-color: #e6e6e6; }

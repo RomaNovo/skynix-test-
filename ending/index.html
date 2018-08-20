@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrp">
+				<div class="header__logo">
+					<div class="logo">
+						<img src="https://s.dou.ua/CACHE/images/img/static/companies/Logo_Skynix_color_vertical/8ad867f9b5a86042848d30ab623a30fd.png" alt="" class="logo__img">
+					</div>
+				</div>
+				<div class="header__title">Skynix</div>
+			</div>
+		</div>
+	</header>
+	<section class="section-form">
+		<div class="container">
+			<div class="section-form__wrp">
+				<h1 class="section-form__title">Заполните форму</h1>
+				<div class="section-form__button">Show form</div>
+				<div class="section-form__message"></div>
+				<div class="section-form__form">
+					<form action="#" class="form">
+						<div class="form__wrp">
+							<div class="form__field">
+								<input type="text" class="form__input" data-type="text" data-id="name" placeholder="Введите имя">
+							</div>
+							<div class="form__field">
+								<input type="text" class="form__input" data-type="email"  placeholder="Введите емайл">
+							</div>
+							<div class="form__field">
+								<input type="text" class="form__input" data-id="city" name="city" list="citynames"  placeholder="Введите город" autocomplete="off" spellcheck="off">
+								<datalist id="citynames">
+								  <option value="Kiev">
+								  <option value="Odessa">
+								  <option value="Donetsk">
+								  <option value="Lviv">
+								  <option value="Kharkiv">
+								</datalist>
+							</div>
+							<div class="form__field">
+								<input type="password" class="form__input" data-type="text"  placeholder="Придумайте пароль">
+								<!-- <img src="" alt="" class="form__img"> -->
+							</div>
+							<div class="form__field">
+								<input type="password" class="form__input" data-type="text"  placeholder="Введите пароль еще раз">
+								<!-- <img src="" alt="" class="form__img"> -->
+							</div>
+							<div class="form__field">
+								<input type="submit" class="form__submit" value="Send">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
