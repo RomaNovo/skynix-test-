@@ -59,17 +59,17 @@ input::-webkit-calendar-picker-indicator {
   margin-top: 50px; }
 
 .section-form__button {
+  margin: 20px auto 0;
   padding: 10px 0;
-  font: 15px "Roboto", sans-serif;
-  border: 1px solid black;
+  display: none;
   max-width: 200px;
+  border: 1px solid black;
+  font: 15px "Roboto", sans-serif;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   text-align: center;
   cursor: pointer;
-  outline: none;
-  margin: 20px auto 0;
-  display: none; }
+  outline: none; }
   .section-form__button:hover {
     background-color: lightgrey; }
 
@@ -87,8 +87,8 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 25px; }
 
 .form__input {
-  width: 100%;
   padding: 15px 0  15px 60px;
+  width: 100%;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   -webkit-box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
@@ -98,8 +98,8 @@ input::-webkit-calendar-picker-indicator {
     border-color: red; }
 
 .form__submit {
-  width: 100%;
   padding: 15px 0;
+  width: 100%;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   -webkit-box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);

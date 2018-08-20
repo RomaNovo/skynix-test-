@@ -10,6 +10,7 @@ body {
 * {
 	box-sizing: border-box;
 }
+
 .container {
 	max-widht: 1200px;
 	padding: 0 25px;
@@ -63,47 +64,45 @@ input::-webkit-calendar-picker-indicator {
 		margin-top: 50px;
 	}
 	&__button {
+		margin: 20px auto 0; 
 		padding: 10px 0;
-		font: 15px $font;
-		border: 1px solid black;
+		display: none;
 		max-width: 200px;
+		border: 1px solid black;
+		font: 15px $font;
 		border-radius: 25px;
 		text-align: center;
 		cursor: pointer;
 		outline: none;
-		margin: 20px auto 0; 
-		display: none;
+		
 		&:hover {
 			background-color: lightgrey;
 		}
 	}
 
 	&__message {
-	margin: 50px auto 0;
-	width: 500px;
-	height: 200px;
-	display: none;
-	border: 1px solid black;
-	font: 20px $font;
-	text-align: center;
-	line-height: 50px;
+		margin: 50px auto 0;
+		width: 500px;
+		height: 200px;
+		display: none;
+		border: 1px solid black;
+		font: 20px $font;
+		text-align: center;
+		line-height: 50px;
 	}
 }
 
-
 .form {
-	&__wrp {
-		
-	}
-	&__field {
-		
+	
+	&__field {		
+
 		&:not(:last-child) {
 			margin-bottom: 25px;
 		}
 	}
 	&__input {
-		width: 100%;
 		padding: 15px 0  15px 60px;
+		width: 100%;	
 		border-radius: 25px;
 		box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
 		outline: none;
@@ -118,8 +117,8 @@ input::-webkit-calendar-picker-indicator {
 	}
 
 	&__submit {
-		width: 100%;
 		padding: 15px 0;
+		width: 100%;	
 		border-radius: 25px;
 		box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
 		outline: none;
