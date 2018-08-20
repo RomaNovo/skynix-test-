@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
 	      item.classList.add('form__input_novalid');
 	    }
 	  });
-	  if(inputs[2].value !== inputs[3].value) {
+
+	  if( (inputs[2].value.length < 6) || (inputs[2].value !== inputs[3].value)) {
+	  	console.log(inputs[2].value.length);
 	  	inputs[2].classList.add('form__input_novalid');
 	  	inputs[3].classList.add('form__input_novalid');
 	  	passed = false;
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 			let arr = form.querySelectorAll('[data-id]');
 			console.log(arr);
 			
-			message.innerHTML = `"Thank you for registering the ${arr[0].value.toUpperCase()} from the city ${arr[1].value.toUpperCase()}."`;
+			message.innerHTML = `"Thank you for registering the ${arr[0].value.toUpperCase()} from the city ${arr[1].value.toUpperCase() || 'KIEV'}."`;
 
 			form.style.display = 'none';
 			btn.style.display = 'block';
