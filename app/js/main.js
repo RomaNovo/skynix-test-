@@ -55,11 +55,35 @@ document.addEventListener('DOMContentLoaded', ()=> {
 	sbmt.addEventListener('click', (e)=> {
 		e.preventDefault();
 		if(validate(form)) {
-			let arr = form.querySelectorAll('[data-id]');
-			message.firstElementChild.innerHTML = `"Thank you for registering the ${arr[0].value.toUpperCase()} from the city ${arr[1].value.toUpperCase()|| ['KIEV', 'ODESSA', 'LVIV', 'DONETSK', 'KHARKIV'][Math.floor(Math.random() * 5)]}."`;
+			let input = form.querySelectorAll('[data-id]');
+			message.firstElementChild.innerHTML = `"Thank you for registering the ${input[0].value.toUpperCase()} from the city ${input[2].value.toUpperCase()|| ['KIEV', 'ODESSA', 'LVIV', 'DONETSK', 'KHARKIV'][Math.floor(Math.random() * 5)]}."`;
 			form.style.display = 'none';
 			btn.style.display = 'block';
 			message.style.display = 'flex';
+
+			let data = new FormData();
+
+			input.forEach( item => {
+				data.append(item.dataset.id, item.value);
+			});
+
+			/*for(var pair of data.entries()) {
+				console.log(`${pair[0]}, ${pair[1]}`);
+			}*/
+			fetch('/', {
+				method : 'post',
+				headers : {
+					'Content-Type': 'application/x-www-form-urlencoded',
+					'accept'  : 'application/json'
+				},
+				body : data,
+				credentials : 'same-origin'
+			})
+			.then(resp => resp.json())
+			.then(resp => {
+				if( typeof(resp) != 'object') resp = JSON.parse(resp);
+				let status = resp.status;
+			})
 		}
 	});
 
