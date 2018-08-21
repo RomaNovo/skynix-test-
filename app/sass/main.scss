@@ -129,6 +129,7 @@ input::-webkit-calendar-picker-indicator {
 		position: absolute;
 		top: 50%; left: 15px;
 		transform: translateY(-50%);
+		pointer-events: none;
 
 		&_user {
 			left: 18px;

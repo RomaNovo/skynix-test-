@@ -118,7 +118,8 @@ input::-webkit-calendar-picker-indicator {
   left: 15px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          transform: translateY(-50%);
+  pointer-events: none; }
   .form__img_user {
     left: 18px; }
   .form__img_city {
