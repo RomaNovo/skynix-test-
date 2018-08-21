@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
 		e.preventDefault();
 		if(validate(form)) {
 			let arr = form.querySelectorAll('[data-id]');
-			message.innerHTML = `"Thank you for registering the ${arr[0].value.toUpperCase()} from the city ${arr[1].value.toUpperCase()|| ['KIEV', 'ODESSA', 'LVIV', 'DONETSK', 'KHARKIV'][Math.floor(Math.random() * 5)]}."`;
+			message.firstElementChild.innerHTML = `"Thank you for registering the ${arr[0].value.toUpperCase()} from the city ${arr[1].value.toUpperCase()|| ['KIEV', 'ODESSA', 'LVIV', 'DONETSK', 'KHARKIV'][Math.floor(Math.random() * 5)]}."`;
 			form.style.display = 'none';
 			btn.style.display = 'block';
-			message.style.display = 'block';
+			message.style.display = 'flex';
 		}
 	});
 

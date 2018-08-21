@@ -17,15 +17,20 @@ body {
 	margin: 0 auto;
 }
 .header {
-	
+	border-bottom: 1px solid lightgrey;
+
 	&__wrp {
 		display: flex;
 		align-items: center;
 	}
 	&__title {
+		margin-right: 40px;
 		flex: 1 0 auto;
 		text-align: end;
 		font: bold 50px $font;
+	}
+	&__link {
+		color: #000;
 	}
 }
 
@@ -48,8 +53,9 @@ input::-webkit-calendar-picker-indicator {
     &__title {
 		margin: 0;
 		padding: 0;
-		font: 25px $font;
+		font: 25px  $font;
 		text-align: center;
+		text-transform: uppercase;
 	}
 
 	&__title {
@@ -68,7 +74,7 @@ input::-webkit-calendar-picker-indicator {
 		padding: 10px 0;
 		display: none;
 		max-width: 200px;
-		border: 1px solid black;
+		border: 1px solid lightgrey;
 		font: 15px $font;
 		border-radius: 25px;
 		text-align: center;
@@ -77,19 +83,25 @@ input::-webkit-calendar-picker-indicator {
 		
 		&:hover {
 			background-color: lightgrey;
+			color: #fff;
 		}
 	}
 
 	&__message {
 		margin: 50px auto 0;
 		width: 500px;
-		height: 200px;
-		display: none;
-		border: 1px solid black;
+		min-height: 200px;
+		max-height: 500px;
+		border: 2px solid lightgrey;
 		font: 20px $font;
-		text-align: center;
-		line-height: 50px;
+		display: none;
+		align-items: center;
+		border-radius: 25px;	
 	}
+}
+
+.message {
+	text-align: center;
 }
 
 .form {
@@ -122,11 +134,11 @@ input::-webkit-calendar-picker-indicator {
 		border-radius: 25px;
 		box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
 		outline: none;
-		background-color: transparent;
+		background-color: #fff;
 		cursor: pointer;
 
 		&:hover {
-			background-color: darken(rgb(255,255,255), 10%);
+			background-color: darken(#fff, 5%);
 		}
 	}
 }

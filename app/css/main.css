@@ -13,23 +13,27 @@ body {
   padding: 0 25px;
   margin: 0 auto; }
 
-.header__wrp {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.header__title {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  text-align: end;
-  font: bold 50px "Roboto", sans-serif; }
+.header {
+  border-bottom: 1px solid lightgrey; }
+  .header__wrp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__title {
+    margin-right: 40px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    text-align: end;
+    font: bold 50px "Roboto", sans-serif; }
+  .header__link {
+    color: #000; }
 
 .logo__img {
   -o-object-fit: cover;
@@ -45,7 +49,8 @@ input::-webkit-calendar-picker-indicator {
   margin: 0;
   padding: 0;
   font: 25px "Roboto", sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .section-form__title {
   margin: 0;
@@ -63,7 +68,7 @@ input::-webkit-calendar-picker-indicator {
   padding: 10px 0;
   display: none;
   max-width: 200px;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   font: 15px "Roboto", sans-serif;
   -webkit-border-radius: 25px;
           border-radius: 25px;
@@ -71,17 +76,26 @@ input::-webkit-calendar-picker-indicator {
   cursor: pointer;
   outline: none; }
   .section-form__button:hover {
-    background-color: lightgrey; }
+    background-color: lightgrey;
+    color: #fff; }
 
 .section-form__message {
   margin: 50px auto 0;
   width: 500px;
-  height: 200px;
-  display: none;
-  border: 1px solid black;
+  min-height: 200px;
+  max-height: 500px;
+  border: 2px solid lightgrey;
   font: 20px "Roboto", sans-serif;
-  text-align: center;
-  line-height: 50px; }
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 25px;
+          border-radius: 25px; }
+
+.message {
+  text-align: center; }
 
 .form__field:not(:last-child) {
   margin-bottom: 25px; }
@@ -105,7 +119,7 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
           box-shadow: 0 5px 30px rgba(200, 235, 253, 0.4);
   outline: none;
-  background-color: transparent;
+  background-color: #fff;
   cursor: pointer; }
   .form__submit:hover {
-    background-color: #e6e6e6; }
+    background-color: #f2f2f2; }
