@@ -109,6 +109,7 @@ input::-webkit-calendar-picker-indicator {
 	&__field {		
 
 		&:not(:last-child) {
+			position: relative;
 			margin-bottom: 25px;
 		}
 	}
@@ -125,7 +126,13 @@ input::-webkit-calendar-picker-indicator {
 	}
 	
 	&__img {
+		position: absolute;
+		top: 50%; left: 15px;
+		transform: translateY(-50%);
 
+		&_user {
+			left: 18px;
+		}
 	}
 
 	&__submit {

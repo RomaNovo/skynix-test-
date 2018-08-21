@@ -98,6 +98,7 @@ input::-webkit-calendar-picker-indicator {
   text-align: center; }
 
 .form__field:not(:last-child) {
+  position: relative;
   margin-bottom: 25px; }
 
 .form__input {
@@ -110,6 +111,16 @@ input::-webkit-calendar-picker-indicator {
   outline: none; }
   .form__input_novalid {
     border-color: red; }
+
+.form__img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  .form__img_user {
+    left: 18px; }
 
 .form__submit {
   padding: 15px 0;
