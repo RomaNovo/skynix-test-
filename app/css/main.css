@@ -121,6 +121,11 @@ input::-webkit-calendar-picker-indicator {
           transform: translateY(-50%); }
   .form__img_user {
     left: 18px; }
+  .form__img_city {
+    top: 35%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 .form__submit {
   padding: 15px 0;

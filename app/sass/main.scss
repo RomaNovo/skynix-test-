@@ -133,6 +133,11 @@ input::-webkit-calendar-picker-indicator {
 		&_user {
 			left: 18px;
 		}
+
+		&_city {
+			top: 35%;
+			transform: rotate(180deg);
+		}
 	}
 
 	&__submit {
